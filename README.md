@@ -1,6 +1,6 @@
 # Web Design Projects Repository
 
-Welcome to my Web Design Projects repository! Here, you’ll find a collection of projects that showcase my growth as a web developer and designer. Each project explores different aspects of web design, including:
+Welcome to my Web Design Projects repository! Here, you’ll find my project that showcase my growth as a web developer and designer. Each project explores different aspects of web design, including:
 
 - **Responsive Layouts:** Adapting designs for various screen sizes.
 - **User-Centric Interfaces:** Crafting engaging and accessible user experiences.
