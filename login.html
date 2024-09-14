@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Register</title>
+    <!-- Link your CSS style sheets here -->
+    <link href="reset.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="reset-webview.css" rel="stylesheet" type="text/css" />
+
+</head>
+  
+<body class="dark-mode">
+    <header class="header">
+        <div id="header-left">
+            <h1 id="nav-name">MTA Connect</h1>
+        </div>
+        <nav id="header-right">
+            <!-- Split Navigation Bar -->
+            <ul class="nav-links">
+                <li><a href="index.html" class="link1">Home</a></li>
+                <li><a href="index.html#about-section" class="link2">About</a></li>
+                <li><a href="index.html#footer" class="link3">Connect</a></li>
+                <li><a href="login.html" class="link4">Log In/Register</a></li>
+                <li><button id="theme-button">Toggle Dark Mode</button></li>
+              <li><button id="reduce-motion-button">Reduce Motion</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="login-container">
+        <div class="form-container">
+            <h2>Login</h2>
+            <form id="login-form" onsubmit="login(event)">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" id="login-bttn">Login</button>
+            </form>
+        </div>
+        <div class="form-container">
+            <h2>Register</h2>
+            <form id="register-form" onsubmit="register(event)">
+                <div class="form-group">
+                    <label for="new-username">New Username:</label>
+                    <input type="text" id="new-username" name="new-username" required>
+                </div>
+                <div class="form-group">
+                    <label for="new-password">New Password:</label>
+                    <input type="password" id="new-password" name="new-password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+                <button type="submit" id="register-bttn">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <footer id="footer" class="login-footer">
+        <div class="footer-left">
+            <img id="footerlogo" src="images/trainlogo.png" alt="MTA Connect logo of train">
+            <div class="footer-info">
+                <h3>MTA CONNECT</h3>
+                <h4>Mission Statement</h4>
+                <p>Our mission is to lessen disparity in transportation for New York City's communities with the help of New Yorkers like you.</p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <div class="newsletter">
+                <h3>Subscribe to Our Newsletter</h3>
+                <p>Stay updated with the latest news and improvements.</p>
+                <form action="#" method="post">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>

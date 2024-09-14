@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>The Transportation Project</title>
+    <!-- Link your CSS style sheets here -->
+    <link href="reset.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="reset-webview.css" rel="stylesheet" type="text/css" />
+  
+</head>
+
+<body class="dark-mode">
+  <header class="header">
+      <div id="header-left">
+          <h1 id="nav-name">MTA Connect</h1>
+      </div>
+      <nav id="header-right">
+          <!-- Split Navigation Bar -->
+          <ul class="nav-links">
+              <li><a href="index.html" class="link1">Home</a></li>
+              <li><a href="index.html#about-section" class="link2">About</a></li>
+              <li><a href="index.html#footer" class="link3">Connect</a></li>
+              <li><a href="login.html" class="link4">Log In/Register</a></li>
+              <li><button id="theme-button">Toggle Dark Mode</button></li>
+              <li><button id="reduce-motion-button">Reduce Motion</button></li>
+          </ul>
+      </nav>
+  </header>
+
+    <main id="main">
+      <div class="header-content">
+        <h2> Articles </h2> 
+      </div>
+      
+      <!--Gallery-->
+      <div class="gallery-container">
+        <div class="gallery-articles">
+          <article class="article">
+            <a href="https://www.nyc.gov/html/dot/html/ferrybus/ferrybus.shtml">
+              <img src="images/article1.png" alt="Thumbnail for Article 1">
+              <h2>Ferries & Buses</h2>
+              <p>This article comes straight from New York City's government website. It details informations and updates on the MTA. </p>
+            </a>
+          </article>
+          <article class="article">
+            <a href="https://www.thecity.nyc/2024/02/29/queens-residents-rides-senior-centers/">
+              <img src="images/article2.jpg" alt="Thumbnail for Article 2">
+              <h2>City Contract</h2>
+              <p> The article explores the challenges Queens residents face in accessing senior centers due to transportation issues</p>
+            </a>
+          </article>
+          <article class="article">
+            <a href="https://qns.com/2024/01/mta-queens-bus-network-redesign-plan-under-fire/"> 
+              <img src="images/article3.jpg" alt="Thumbnail for Article 3">
+              <h2>Queen's Busses</h2>
+              <p>The article discusses the controversy surrounding the proposed redesign of the MTA Queens bus network.</p>
+            </a>
+          </article>
+          <article class="article">
+            <a href="https://www.nbcnewyork.com/traffic/transit-traffic/mta-board-approves-nyc-congestion-pricing-plan-what-to-know-about-tolls-exemptions-and-more/4926113/"> 
+              <img src="images/article4.jpg" alt="Thumbnail for Article 4">
+              <h2>NYC Congestion</h2>
+              <p>The article discusses the approval of the NYC congestion pricing plan by the MTA board, outlining key details such as tolls.</p>
+            </a>
+          </article>
+          <article class="article">
+            <a href="https://apnews.com/article/transit-subways-buses-crime-nyc-philadelphia-f26609cb9fda9f9ad32f13481c3d8b6d">
+              <img src="images/article5.jpg" alt="Thumbnail for Article 5">
+              <h2>Tranist Crime</h2>
+              <p>The article discusses concerns surrounding transit safety in major cities like New York City and Philadelphia.</p>
+            </a>
+          </article>
+          <article class="article">
+            <a href="https://www.bloomberg.com/news/articles/2024-03-27/congestion-pricing-in-new-york-city-how-the-new-system-would-work?embedded-checkout=true">
+              <img src="images/article6.jpg" alt="Thumbnail for Article 6">
+              <h2>Congestion</h2>
+              <p>The article discusses the implementation and implications of congestion pricing in New York City would function.</p>
+            </a>
+          </article>
+        </div>
+        <div class="dots-container">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+      </div>
+
+        
+      
+        <p class="open-message"> Here are articles to keep you up to date on the latest news surrounding transit. </p>
+        
+    </main>
+
+  <div id="about-section" class="aboutsec">  
+      <h2 class="about-header">About</h2>
+      <p id="aboutpara"> The Transportation Project, a non-profit born in the heart of New York City in 2024, is dedicated to advocating for the universal benefits of transportation. We firmly believe that access to safe, reliable, and efficient transportation is a fundamental right, essential for fostering equitable opportunities and sustainable communities.
+
+      Our mission is clear: to create a future where transportation serves as a catalyst for progress and equality. We champion the expansion of transportation networks, advocating for improved subway lines and enhanced bus services, particularly in underserved areas like Queens. Through our advocacy, we strive to ensure that all individuals have access to the opportunities and resources that transportation provides.
+
+      As we navigate the complex landscape of transportation issues, we remain committed to integrity and transparency. We provide our supporters with factual information, empowering them to make informed decisions and take meaningful action. Together, we work towards a more accessible, equitable, and sustainable future for all.
+
+      Join us on this journey as we pave the way for a transportation system that truly serves the needs of every individual and community. Together, we can make a difference and create a brighter future for generations to come. </p>
+      <br>
+      <p id="donations"> As a non-profit we run on your donations!</p>
+      <div class="donation-info">
+          <h4>Make a Donation</h4>
+          <div class="donation-container">
+              <div class="donation-options">
+                  <button class="donation-option" data-amount="5">5.00</button>
+                  <button class="donation-option" data-amount="10">10.00</button>
+                  <button class="donation-option" data-amount="20">20.00</button>
+              </div>
+              <div class="submit-donation">
+                  <button id="donate-button">Donate</button>
+                  <p id="donation-message"></p>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+
+  <div class="petition revealable" id="petition">
+
+      <h2  class="petition-heading">Sign Our Petition 📢</h2>
+       <p id="counter">🖊️ 3 people have signed this petition and support this cause.</p>
+      <div class="petition-container">
+
+
+        <div class="petition-para">
+         <p> At MTA Connect, our aim is to tackle NYC's transportation disparities head-on. We offer articles, stats, and direct channels to officials, making it easy for you to join the fight for better transit. Our platform serves as a beacon for those seeking to understand, advocate for, and enact change in this critical social issue. Through a multifaceted approach, we strive to empower individuals with the knowledge and tools necessary to navigate and confront the challenges of urban mobility. Together, let's ensure every New Yorker can get around the city with ease! </p>
+        </div>
+
+        
+
+        <div class="signatures">
+          <p>🖊️ Amy Garven from Brooklyn supports this.</p>
+          <p>🖊️ Lola McLoud from Queens supports this.</p>
+          <p>🖊️ James Reese from Harlem supports this.</p>
+        </div>
+
+      </div>
+
+    <!--- Sign Petition Form --->
+    <form id="sign-petition" title="sign-petition">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="hometown">Hometown:</label>
+        <input type="text" id="hometown" name="hometown" required>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required>
+      
+      </form>
+
+    </form>
+
+     <!--- Sign Now Button --->
+    <button id="sign-now-button">Sign Now</button>
+
+  </div>
+  
+
+<!--Modal--->
+  <div id="thanks-modal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div id="modal-text-container">
+        <!-- Placeholder text -->
+        <p id="thanks-modal-content">Thank you for signing the petition!</p>
+        <button>Close</button>
+      </div>
+      <!-- Image -->
+      <img src="images/MTAB.png" alt="modal image of a bus">
+    </div>
+  </div>
+
+
+  
+  <footer id="footer">
+      <div class="footer-left">
+          <img id="footerlogo" src="images/trainlogo.png" alt="MTA Connect logo of train">
+          <div class="footer-info">
+              <h3>MTA CONNECT</h3>
+              <h4>Mission Statement</h4>
+              <p>Our mission is to lessen disparity in transportation for New York City's communities with the help of New Yorkers like you.</p>
+          </div>
+      </div>
+      <div class="footer-right">
+          <div class="newsletter">
+              <h3>Subscribe to Our Newsletter</h3>
+              <p>Stay updated with the latest news and improvements.</p>
+              <form action="#" method="post">
+                  <input type="email" placeholder="Your email address" required>
+                  <button type="submit">Subscribe</button>
+              </form>
+          </div>
+      </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
+
