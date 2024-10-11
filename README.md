@@ -2,16 +2,14 @@
 
 Welcome to my Web Design Projects repository! Here, you’ll find my project that showcase my growth as a web developer and designer. Each project explores different aspects of web design, including:
 
-- **Responsive Layouts:** Adapting designs for various screen sizes.
-- **User-Centric Interfaces:** Crafting engaging and accessible user experiences.
 - **Interactive Features:** Implementing dynamic elements using JavaScript, CSS animations, and more.
-- **SEO and Performance Optimization:** Ensuring websites are both fast and discoverable.
 
 Whether you're here to explore examples of HTML, CSS, JavaScript, or more complex frameworks, you’ll find projects that demonstrate my attention to detail and dedication to creating intuitive, accessible web solutions.
 
 ## Projects Overview
 
 1. **MTA Connect Advocacy Project:** A website dedicated to advocating for improved transportation services in NYC (details below).
+   https://replit.com/@treserve/TReserveAdvocacyProject?v=1
 
 ---
 
